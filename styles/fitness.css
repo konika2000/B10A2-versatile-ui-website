@@ -19,7 +19,15 @@
     background-color: rgba(17, 17, 17, 1.00);
 
    }
-
+   .title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 0px;
+  }
+  .description{
+    font-size: 1rem;
+    font-weight: 400;
+  }
   /* navbar style */
   .nav-bar{
     max-width:1060px;
@@ -34,6 +42,7 @@
   .btn1{
     font-size: 1rem;
     list-style: none;
+    border: none;
     margin-right: 30px;
     background-color:rgba(230, 83, 60, 1);
     border-radius: 46px;
@@ -167,15 +176,6 @@ font-weight: 400;
     .habits{
       gap: 58px;
     }
-    .habit-title{
-      font-size: 3rem;
-      font-weight: 900;
-      margin-bottom: 0px;
-    }
-    .habit-description{
-      font-size: 1rem;
-      font-weight: 400;
-    }
     .habit-cards{
       display: flex;
       align-items: center;
@@ -184,6 +184,27 @@ font-weight: 400;
     }
     .card-img{
       border-radius: 50%;
+    }
+    /* run an extra mile */
+    .run{
+      max-width: 1060px;
+      margin: 100px auto;
+      display: flex;
+      gap: 160px;
+      background-color: #222222;
+     
+    }
+    .run-left, .run-right{
+      max-width: 440px;
+      margin: 30px 40px 30px 40px;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .run-right-img{
+      width: 100%;
+      border-radius: 10px;
+      
     }
   /* responsive */
   @media screen and (max-width:576px){
@@ -199,7 +220,7 @@ font-weight: 400;
       .btn1, .btn2{
         border-radius: 30px;
       }
-      .banner, .habit-cards{
+      .banner, .habit-cards, .run{
         flex-direction: column;
         gap: 30px;
       }
@@ -218,6 +239,9 @@ font-weight: 400;
       }
       .habit-title{
         font-size: 32px;
+      }
+      .run{
+        gap: 0px;
       }
     
   }
