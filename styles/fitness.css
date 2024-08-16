@@ -191,8 +191,7 @@ font-weight: 400;
       margin: 100px auto;
       display: flex;
       gap: 160px;
-      background-color: #222222;
-     
+      background-color: #222222; 
     }
     .run-left, .run-right{
       max-width: 440px;
@@ -200,11 +199,53 @@ font-weight: 400;
       align-items: center;
       text-align: center;
     }
-    
     .run-right-img{
       width: 100%;
-      border-radius: 10px;
-      
+      border-radius: 10px;  
+    }
+    /* calculate BMI section */
+    .bmi-heading{
+      max-width:670px;
+      margin: 0 auto;
+    }
+    /* meet our team */
+    .team-heading{
+      max-width: 670px;
+      margin: 0px auto 58px auto;
+      text-align: center;
+    }
+    .team-body{
+      max-width: 1060px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .team-member{
+      max-width: 326px;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+    .team-img{
+      width: 100%;
+      height: 100%;
+      border-radius: 18px;
+    }
+    .introduce{
+      margin-top: -60px;
+      margin-left: 20px;
+    }
+    .name{
+      font-size: 20px;
+      font-weight: 900;
+      margin: 0px;
+      padding: 0px;
+    }
+    .position{
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0px;
+      padding: 0px;
     }
   /* responsive */
   @media screen and (max-width:576px){
@@ -228,7 +269,7 @@ font-weight: 400;
         margin-left: 10px;
         margin-top: 10px;
       }
-      .banner-title{
+      .title{
         font-size: 36px;
       }
       .banner-r-btn1{
@@ -243,5 +284,10 @@ font-weight: 400;
       .run{
         gap: 0px;
       }
-    
+      .team-body{
+        grid-template-columns: repeat(1, 1fr);
+      }
+    .team-member{
+   margin-left: 60px;
+    }
   }
