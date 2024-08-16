@@ -163,7 +163,7 @@ font-weight: 400;
 }
 
   /* change your habit section style */
-  .main{
+  .main, .footer{
     max-width:1440px;
     margin:0 auto;
   }
@@ -208,6 +208,63 @@ font-weight: 400;
       max-width:670px;
       margin: 0 auto;
     }
+    .bmi-contant{
+      background-color:#222222 ;
+      height: 490px;
+      display: flex;
+    }
+    .table {
+      border-collapse: collapse;
+  }
+
+  td {
+      border: 1px solid rgb(67, 66, 66);
+      padding: 5px 10px;
+  }
+
+  .th {
+      border: 1px solid rgb(72, 71, 71);
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 400;
+  }
+  .th1{
+    border: 1px solid rgb(72, 71, 71);
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: 500;
+  }
+  .bmi-left{
+    width: 720px;
+    
+  }
+  .table-body{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .table{
+    margin: 0 auto;
+  }
+  .bmi-tbl-head{
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom:52px ;
+  }
+  .bmi-form-head{
+    font-size: 28px;
+    font-weight: 900;
+  }
+  .bmi-right{
+    width: 720px;
+    margin-top: 30px;
+  }
+  .bmi-btn{
+    color: #FFFFFF;
+    margin-top: 20px;
+  }
+ 
+  
+
     /* meet our team */
     .team-heading{
       max-width: 670px;
@@ -279,6 +336,15 @@ font-weight: 400;
       margin: 0 auto;
       gap:150px ;
     }
+    .footer{
+      height: 100px;
+      margin-top: 0px;
+      
+    }
+    .footer-des{
+      width: 318px;
+      margin: 0 auto;
+    }
   /* responsive */
   @media screen and (max-width:576px){
       .nav-link{
@@ -293,7 +359,7 @@ font-weight: 400;
       .btn1, .btn2{
         border-radius: 30px;
       }
-      .banner, .habit-cards, .run, .fitness-container,.fitness-right{
+      .banner, .habit-cards, .run, .fitness-container,.fitness-right, .bmi, .bmi-contant{
         flex-direction: column;
         gap: 30px;
       }
@@ -322,10 +388,19 @@ font-weight: 400;
     .team-member{
       margin-left: 60px;
     }
+    .name{
+      font-size: 18px;
+    }
     .fitness-container{
       height: auto;
     }
     .fitness-left, .fitness-right{
       margin-left: 10px;
+    }
+    .table{
+      margin-left: 10px;
+    }
+    .bmi-contant{
+      margin-bottom: 80px;
     }
   }
