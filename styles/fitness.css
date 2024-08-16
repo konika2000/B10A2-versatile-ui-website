@@ -247,6 +247,38 @@ font-weight: 400;
       margin: 0px;
       padding: 0px;
     }
+    /* fitness */
+    .fitness{
+      margin-top: 50px;
+      background-color: #222222;
+    }
+    .fitness-container{
+       max-width:1060px;
+       height: 250px;
+       margin: auto;
+       display: flex;
+    }
+    .fitness-left{
+      max-width: 530px;
+    }
+    .fitness-head{
+      font-style: italic;
+      color: #E6533C;
+      font-size: 70px;
+      font-weight: 800;
+      margin: 0px;
+      padding: 0px;
+    }
+    .description{
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .fitness-right{
+      max-width: 530px;
+      display: flex;
+      margin: 0 auto;
+      gap:150px ;
+    }
   /* responsive */
   @media screen and (max-width:576px){
       .nav-link{
@@ -261,7 +293,7 @@ font-weight: 400;
       .btn1, .btn2{
         border-radius: 30px;
       }
-      .banner, .habit-cards, .run{
+      .banner, .habit-cards, .run, .fitness-container,.fitness-right{
         flex-direction: column;
         gap: 30px;
       }
@@ -288,6 +320,12 @@ font-weight: 400;
         grid-template-columns: repeat(1, 1fr);
       }
     .team-member{
-   margin-left: 60px;
+      margin-left: 60px;
+    }
+    .fitness-container{
+      height: auto;
+    }
+    .fitness-left, .fitness-right{
+      margin-left: 10px;
     }
   }
